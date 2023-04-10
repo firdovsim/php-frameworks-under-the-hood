@@ -4,3 +4,6 @@ $_SERVER['REQUEST_URI'] - получаем строку в браузере по
 trim($_SERVER['REQUEST_URI'], '/') - убираем слева и справа slashes: posts/create
 
 У нас должен быть класс Router с двумя свойствами: routes = [] и route = []
+
+Regexp для главной страницы: '^$'
+Regexp для остальных страниц: '([a-z-]+)/([a-z-]+)' - controller/action
